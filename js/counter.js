@@ -1,9 +1,7 @@
-const { event } = require("jquery");
-
 window.addEventListener('DOMContentLoaded',(event) =>{
     getVisitCount();
 })
-const functionApi = '';
+const functionApi = 'http://localhost:7071/api/GetResumeCounter';
 
 const getVisitCount = () =>{
     let count = 30;
@@ -15,5 +13,6 @@ const getVisitCount = () =>{
         document.getElementById("counter").innerText = count;
     }).catch(function(error){
         console.log(error);
-    })
+    });
+    return count;
 }

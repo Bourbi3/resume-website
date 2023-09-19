@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "resume_website": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7066",
+      "launchBrowser": false
+    }
+  }
+}
